@@ -705,6 +705,12 @@ img,svg{
     /* Positioning */
     margin: 0px 24px 48px 0px;
 }
+.portfolioList-item:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolioList-item:nth-last-child(3n+1){
     /* Positioning */
     margin-right: 0px;
