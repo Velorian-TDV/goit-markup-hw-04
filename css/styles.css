@@ -291,15 +291,16 @@ img,svg{
     /* Visual */
     color: var(--accent);
 }
-.footer-list{
+.footer-content{
     /* Box model */
     display: flex;
 }
-.footer-list-item{
+.footer-content-item{
     margin-right: 120px;
 }
-.footer-list-item-header{
+.footer-content-item-social{
     /* Typography */
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -310,25 +311,31 @@ img,svg{
     /* Positioning */
     margin-bottom: 16px;
 }
-.footer-list-item-socialList{
+.footer-content-item-socialList{
+    /* Box model */
     display: flex;
+
+    /* Positioning */
+    width: 208px;
 }
-.footer-list-item-socialList-item{
+.footer-content-item-socialList-item{
     /* Box model */
     flex-basis: calc((100% - 3*16px)/4);
+    height: 40px;
 }
-.footer-list-item-socialList-item:not(:last-child){
+.footer-content-item-socialList-item:not(:last-child){
     /* Positioning */
     margin-right: 16px;
 }
-.footer-list-item-socialList-item-link{
+.footer-content-item-socialList-item-link{
     /* Box model */
     display: flex;
     justify-content: center;
     align-items: center;
 
     /* Positioning */
-    padding: 8px;
+    width: 100%;
+    height: 100%;
 
     /* Visual */
     background-color: rgba(255, 255, 255, 0.1);
@@ -336,10 +343,10 @@ img,svg{
     border-radius: 50%;
     border: 1px solid transparent;
 }
-.footer-list-item-socialList-item-link:hover{
+.footer-content-item-socialList-item-link:hover{
     background-color: var(--success);
 }
-.footer-list-item-socialList-item-link:focus{
+.footer-content-item-socialList-item-link:focus{
     background-color: var(--success);
 }
 
@@ -365,6 +372,7 @@ img,svg{
                         url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     background-color: var(--hero-background);
 }
 .firstBlock-header{
@@ -436,7 +444,7 @@ img,svg{
 }
 .secondBlock-list-item-featureIcon{
     /* Positioning */
-    padding: 24px 102px;
+    height: 112px;
     margin-bottom: 8px;
 
     /* Box model */
@@ -555,6 +563,7 @@ img,svg{
 .fourthBlock-list-item-socialList-item{
     /* Box model */
     flex-basis: calc((100% - 3*24px)/4);
+    height: 40px;
 }
 .fourthBlock-list-item-socialList-item:not(:last-child){
     /* Positioning */
@@ -567,7 +576,8 @@ img,svg{
     align-items: center;
 
     /* Positioning */
-    padding: 12px;
+    width: 100%;
+    height: 100%;
 
     /* Visual */
     background-color: var(--primary-brand);
@@ -599,8 +609,9 @@ img,svg{
     display: flex;
 }
 .fifthBlock-list-item{
-    /* Box model */
+    /* Positioning */
     flex-basis: calc((100% - 5*24px)/6);
+    height: 88px;
 }
 .fifthBlock-list-item:not(:last-child){
     /* Positioning */
@@ -613,7 +624,8 @@ img,svg{
     align-items: center;
 
     /* Positioning */
-    padding: 16px 32px;
+    width: 100%;
+    height: 100%;
 
     /* Visual */
     border: 1px solid var(--subtle-text);
@@ -705,12 +717,21 @@ img,svg{
     /* Positioning */
     margin: 0px 24px 48px 0px;
 }
-.portfolioList-item:hover{
+.portfolioList-item-link{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.portfolioList-item-link:hover{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
                 0px 1px 1px rgba(46, 47, 66, 0.16), 
                 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
+.portfolioList-item-link:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .portfolioList-item:nth-last-child(3n+1){
     /* Positioning */
     margin-right: 0px;
@@ -747,6 +768,9 @@ img,svg{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
+    /* Visual */
+    color: var(--text);
 
     /* Positioning */
     margin-top: 8px;
